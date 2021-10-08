@@ -16,14 +16,11 @@ class Library
 
   def add(entity)
     case entity
-    when Book
-      @books << entity
-    when Author
-      @authors << entity
-    when Order
-      @orders << entity
-    when Reader
-      @readers << entity
+    when Book then @books << entity
+    when Author then @authors << entity
+    when Order then @orders << entity
+    when Reader then @readers << entity
+    else wrong_entity
     end
   end
 

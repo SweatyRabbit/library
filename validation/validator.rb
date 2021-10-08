@@ -12,4 +12,8 @@ module Validator
   def check_positive(item)
     raise Error::PositiveNumericError unless item.positive?
   end
+
+  def wrong_entity
+    raise Error::WrongClassError
+  end
 end

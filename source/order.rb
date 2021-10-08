@@ -4,7 +4,7 @@ class Order
   include Validator
   attr_reader :book, :reader, :date
 
-  def initialize(book:, reader: nil, date: ::Date.today)
+  def initialize(book:, reader: nil, date: Date.today)
     @book = book
     @reader = reader
     @date = date

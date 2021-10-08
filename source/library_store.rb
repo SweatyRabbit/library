@@ -35,7 +35,7 @@ class LibraryStore
   end
 
   def db_initialized?
-    File.exist?('./db/database.yml')
+    File.exist?(path)
   end
 
   def standard_data
