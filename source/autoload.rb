@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+require 'pry'
+require 'yaml/store'
+require 'json'
+require 'date'
+require_relative '../error/invalid_type_argument_error'
+require_relative '../error/empty_variable_error'
+require_relative '../error/positive_numeric_error'
+require_relative '../validation/validator'
+require_relative 'reader'
+require_relative 'author'
+require_relative 'book'
+require_relative 'order'
+require_relative 'library_store'
