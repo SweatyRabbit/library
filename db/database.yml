@@ -1,0 +1,85 @@
+---
+:authors:
+- &1 !ruby/object:Author
+  name: Ivan
+  biography: ''
+- &2 !ruby/object:Author
+  name: Andrei
+  biography: ''
+:books:
+- &3 !ruby/object:Book
+  title: Good
+  author: *1
+- &5 !ruby/object:Book
+  title: Bad
+  author: *2
+- &9 !ruby/object:Book
+  title: Unknown
+  author: *1
+- &10 !ruby/object:Book
+  title: Dragons
+  author: *2
+:readers:
+- &4 !ruby/object:Reader
+  name: Ivan
+  email: ivanhulko14@gmail.com
+  city: Dnipro
+  street: Husenko
+  house: 10
+- &6 !ruby/object:Reader
+  name: Kirill
+  email: email@email.com
+  city: Dnipro
+  street: Good
+  house: 10
+- &8 !ruby/object:Reader
+  name: John
+  email: email@email.com
+  city: Dnipro
+  street: Good
+  house: 10
+- &7 !ruby/object:Reader
+  name: John
+  email: email@email.com
+  city: Dnipro
+  street: Good
+  house: 10
+- &11 !ruby/object:Reader
+  name: Anna
+  email: email@email.com
+  city: Dnipro
+  street: Good
+  house: 10
+:orders:
+- !ruby/object:Order
+  book: *3
+  reader: *4
+  date: 2021-10-08
+- !ruby/object:Order
+  book: *5
+  reader: *6
+  date: 2021-10-08
+- !ruby/object:Order
+  book: *3
+  reader: *6
+  date: 2021-10-08
+- !ruby/object:Order
+  book: *5
+  reader: *7
+  date: 2021-10-08
+- !ruby/object:Order
+  book: *3
+  reader: *8
+  date: 2021-10-08
+- !ruby/object:Order
+  book: *9
+  reader: *7
+  date: 2021-10-08
+- !ruby/object:Order
+  book: *10
+  reader: *11
+  date: 2021-10-08
+- !ruby/object:Order
+  book: *9
+  reader: *4
+  date: 2021-10-08
